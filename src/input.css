@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+.font-sora {
+      font-family: "Sora", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+}
+
+.font-inter {
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+}
+
+.background-padrao {
+      background-color: #1E1E1E;
+}
+
+.input-base {
+      border: 1px solid #363B40;
+      background-color: #1C1F21;
+      border-radius: .5rem;
+      height: 3rem;
+      width: 100%;
+      padding: .25rem .5rem;
+      &::placeholder {
+            color: #869198;
+      }
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  filter: hue-rotate(180deg) invert(80%) brightness(120%);
+  cursor: pointer;
+}
+
+.toggle-group {
+  display: flex;
+  background: #1C1F21;
+  border-radius: 0.5rem;
+  height: 3rem;
+  padding: 4px;
+  border: 1px solid #363B40;
+}
+
+.toggle-group input[type="radio"] {
+  display: none;
+}
+
+.toggle-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 12px 18px;
+  border-radius: 0.4rem;
+  color: #8D98A8;
+  transition: background 0.15s, color 0.15s;
+  font-weight: 500;
+}
+
+.toggle-group input[type="radio"]:checked + label {
+  background: #373D47;
+  color: #F4F6FA;
+}
+
+.toggle-group label svg {
+  font-size: 1.1em;
+}

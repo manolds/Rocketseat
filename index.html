@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=Novo, initial-scale=1.0">
-    <title>Document</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+      <link rel="stylesheet" href="src/output.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap"
+            rel="stylesheet">
+      <title>Projeto Formulario</title>
 </head>
-<body>fdfdfd
-    tetedsadsadsa
+
+<body class="background-padrao  max-w-7xl mx-auto text-white font-inter">
+      <header class="p-4">
+            <h1 class="text-2xl font-sora font-bold">Crie seu convite</h1>
+      </header>
+      <div class="flex flex-col p-4">
+
+            <div class="flex flex-row gap-2 items-center">
+                  <i class="fa-regular fa-calendar text-zinc-400"></i>
+                  <span class="font-inter text-lg">Sobre o evento</span>
+            </div>
+
+            <label for="first" class="flex flex-col gap-1 items-start mt-4">
+                  Título
+                  <input type="text" name="first" id="first" placeholder="Nome do evento" class="input-base">
+            </label>
+
+            <div class="flex flex-row justify-between w-full gap-4">
+                  <label for="inicio" class="flex flex-col gap-1 items-start mt-4 w-full">
+                        Início
+                        <input type="datetime-local" name="inicio" id="inicio" placeholder="DD/MM/AAAA, --:--"
+                              class="input-base">
+                  </label>
+                  <label for="fim" class="flex flex-col gap-1 items-start mt-4 w-full">
+                        Fim
+                        <input type="datetime-local" name="fim" id="fim" placeholder="DD/MM/AAAA, --:--"
+                              class="input-base">
+                  </label>
+            </div>
+
+            <div class="flex flex-row justify-between w-full gap-4 mt-6">
+                  <div class="flex flex-col gap-1">
+                        <span>Tipo</span>
+                        <div class="toggle-group flex space-x-2">
+                              <input type="radio" class="sr-only peer" id="presencial" name="tipo" checked>
+                              <label for="presencial" class="flex items-center cursor-pointer">
+                                    <i class="fa-regular fa-building"></i>
+                                    <span>Presencial</span>
+                              </label>
+
+                              <input type="radio" class="sr-only peer" id="online" name="tipo">
+                              <label for="online" class="flex items-center cursor-pointer">
+                                    <i class="fa-regular fa-camera"></i>
+                                    <span>Online</span>
+                              </label>
+                        </div>
+                  </div>
+
+
+                  <label for="local" class="flex flex-col gap-1 items-start w-full">
+                        Local
+                        <input type="text" name="local" id="local" placeholder="Link ou endereço" class="input-base">
+                  </label>
+
+
+            </div>
+
+
+      </div>
+      <footer>
+
+      </footer>
 </body>
+
 </html>
